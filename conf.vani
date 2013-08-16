@@ -1,0 +1,22 @@
+<?php
+$host="localhost";
+$user="root";
+$pass="admin";
+$db="vani";
+
+//$host="75.126.199.254";
+//$user="vinoth";
+//$pass="!V123456";
+//$db="test3";
+$con=mysql_connect($host,$user,$pass);
+if($con==NULL)
+ echo "Database server connection error";
+ 
+$val=mysql_select_db($db,$con);
+if($val==NULL)
+ echo "Database connection error";
+ 
+ //try connect to db
+	$connecDB = mysqli_connect($host, $user, $pass,$db)or die('could not connect to database');
+	
+?>
